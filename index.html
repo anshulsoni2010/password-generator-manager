@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./logo.svg" type="image/x-icon">
+
+    <!-- footer design custom style tag  -->
+    <style>
+        footer {
+            position: relative;
+            height: 6vh;
+            width: 100%;
+            background-color: #333333;
+            position: fixed;
+            bottom: 0;
+        }
+
+        p.copyright {
+            position: absolute;
+            width: 100%;
+            color: #fff;
+            line-height: 40px;
+            font-size: 0.7em;
+            text-align: center;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <h2>Password Generator</h2>
+        <div class="result-container">
+            <span id="result"></span>
+            <button class="btn" id="clipboard">
+                <i class="far fa-clipboard"></i>
+            </button>
+        </div>
+        <div class="settings">
+            <div class="setting">
+                <label>Password length</label>
+                <input type="number" id="length" min='4' max='20' value='20' />
+            </div>
+            <div class="setting">
+                <label>Include uppercase letters</label>
+                <input type="checkbox" id="uppercase" checked />
+            </div>
+            <div class="setting">
+                <label>Include lowercase letters</label>
+                <input type="checkbox" id="lowercase" checked />
+            </div>
+            <div class="setting">
+                <label>Include numbers</label>
+                <input type="checkbox" id="numbers" checked />
+            </div>
+            <div class="setting">
+                <label>Include symbols</label>
+                <input type="checkbox" id="symbols" checked />
+            </div>
+        </div>
+        <button class="btn btn-large" id="generate">
+            Generate password
+        </button>
+        <br>
+        <button class="btn btn-large">
+            <a href="./password-manager/index.html">Want to save your password?</a>
+        </button>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- SOCIAL PANEL HTML -->
+    <div class="social-panel-container">
+        <div class="social-panel">
+            <p>Created by
+                <a target="_blank" href="https://anshulsoni.netlify.app">Anshul Soni</a>
+            </p>
+            <button class="close-btn"><i class="fas fa-times"></i></button>
+            <h4>Get in touch on</h4>
+            <ul>
+                <li>
+                    <a href="https://anshulsoni.netlify.app" target="_blank">
+                        <i class="fab fa-globe"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.linkedin.com/in/anshul-soni2010" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://twitter.com/AnshulSoni2010" target="_blank">
+                        <i class="fab fa-twitter-square"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://github.com/anshulsoni2010" target="_blank">
+                        <i class="fab fa-github-square"></i>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <button class="floating-btn">
+        Get in Touch
+    </button>
+    <footer>
+        <p class="copyright">© Created by Anshul Soni</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
